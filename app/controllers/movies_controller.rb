@@ -25,6 +25,7 @@ class MoviesController < ApplicationController
     movie.year = query.year
     movie.plot = query.plot
     movie.mpaa_rating = query.mpaa_rating
+    movie.poster = query.poster
     movie.rating = params[:rating]
     movie.save
     redirect_to '/movies'
