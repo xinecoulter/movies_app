@@ -5,7 +5,9 @@ class CreateMoviesTable < ActiveRecord::Migration
       t.integer :year
       t.string :plot
       t.string :mpaa_rating
-      t.integer :rating
+      t.integer :rating, :default => 50
+      t.string :poster
+      t.timestamps
     end
   end
 
